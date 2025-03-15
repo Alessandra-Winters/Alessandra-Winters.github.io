@@ -16,11 +16,32 @@
 // })
 
 //scroll to top button
-const scrollBtn = document.querySelector(".scrollToTop")
-console.log(scrollBtn);
+const scrollBtn = document.querySelector(".scrollToTop"); //setting a variable to our unique button ID
+console.log(scrollBtn); //output log to check for null returns
 
+//function to store our button visability checks
+const refreshButtonVisibility = () => {
+    console.log(document.documentElement.scrollTop);
+    if (document.documentElement.scrollTop <= 150) { //if scroll has below a certian distance then
+        console.log("hide");
+        scrollBtn.style.display = "none"; //hide the button
+    }
+    else {
+        console.log("block");
+        scrollBtn.style.display = "block"; //if above the distance show the button
+    }
+}
+refreshButtonVisibility(); //refresh visabilitiy when page loads
+
+
+//when the button is clicked, scrolltotop
 scrollBtn.addEventListener('click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+});
+
+//when you scroll on the page check for button visability
+document.addEventListener("scroll", (e) => {
+    refreshButtonVisibility();
 })
 
