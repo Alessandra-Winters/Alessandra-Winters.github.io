@@ -39,7 +39,7 @@ text/main bg(off white): #F1EFED
   color: #140d0d;
 }
 
-.accentText{
+.accentText {
   color: #790000;
 }
 
@@ -135,6 +135,17 @@ text/main bg(off white): #F1EFED
   color: #f1efed;
 }
 
+/*Top Nav Bar*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky+div {
+  margin-top: 10rem;
+}
+
 /* Side Nav Bar */
 .myLinkSide {
   color: #790000;
@@ -149,6 +160,23 @@ text/main bg(off white): #F1EFED
   color: #790000;
 }
 
+.redLink {
+  color: #790000;
+}
+
+.myPortFolioLinks {
+  color: #790000;
+  text-decoration: none;
+}
+
+.myPortFolioLinks:hover {
+  text-decoration: underline #790000;
+}
+
+.myPortFolioLinks:focus {
+  outline: 1px solid #790000;
+}
+
 #sideNavBar {
   padding-top: 2em;
   padding-left: .5em;
@@ -156,6 +184,37 @@ text/main bg(off white): #F1EFED
   /* border: 2px solid #790000; */
   /* background-color: #f1efed; */
   color: #790000;
+}
+
+.scrollToTop {
+  position: fixed;
+  margin-left: .5rem;
+  margin-bottom: .5rem;
+  left: 2rem;
+  bottom: 2rem;
+  border-radius: 10%;
+  border: none;
+  /* border: .05px solid #790000; */
+  width: 5.5em;
+  height: 5.5em;
+  align-content: center;
+  padding-top: .7rem;
+  background-color: rgba(241, 239, 237, .5);
+  cursor: pointer;
+}
+
+.scrollToTop:hover {
+  color: #f1efed;
+  outline: 1px solid #140d0d;
+}
+
+.scrollToTop:focus {
+  color: #f1efed;
+  outline: 1px solid #140d0d;
+}
+
+.scrollBtnTxt {
+  color: #140d0d;
 }
 
 .myDDMenu {
