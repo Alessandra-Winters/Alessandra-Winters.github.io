@@ -313,6 +313,24 @@ text/main bg(off white): #F1EFED
   height: 100%;
 }
 
+.imageTwo {
+  object-fit: contain;
+  /* padding: .5em; */
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  object-fit: contain;
+   padding: .5em; 
+  width: 100%;
+  height: 100%;
+}
+
+.video-wrapper{
+  aspect-ratio: 16/9;
+}
+
 .image2 {
   object-fit: contain;
   padding-left: 4em;

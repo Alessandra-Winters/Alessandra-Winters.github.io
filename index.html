@@ -13,7 +13,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b55f8b7344.js"></script>
     <link rel='stylesheet' href='css/css.css'>
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
 </head>
 
 <body>
@@ -99,12 +99,32 @@
         </header>
         <!-- Below here are the artifacts and information -->
         <div class="row">
-            <div class="col-xl-1"></div>
+            <div class="col-xl-2">
+                <ul class="nav flex-column " id="sideNavBar">
+                    <li class="nav-item">
+                        <a class="nav-link myLinkSide" href="#WhoAmI">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link myLinkSide" href="#Skills">Skills </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link myLinkSide" href="#FavProj">Favorite Projects</a>
+                    </li>
+                </ul>
+                <!--SCROLL TO TOP BUTTON HERE-->
+                <section aria-label="Scroll To Top Button">
+                    <button class="scrollToTop"><i class="fa-regular fa-hand-point-up fa-2xl"
+                            style="color: #790000;"></i></i>
+                        <p class="scrollBtnTxt">Back To Top</p>
+                    </button>
+                </section>
+
+            </div>
             <div class="col-xl-3 mainBackground">
                 <img src="assets/Winters_Senior_Headshot.jpg" alt="headshot of Alessandra Winters" id="headShot">
             </div>
-            <div class="col-xl-7 mainBackground mainText">
-                <h1 class="headings1"> Who Am I?</h1>
+            <div class="col-xl-6 mainBackground mainText">
+                <h1 class="headings1" id="WhoAmI"> Who Am I?</h1>
                 <p class="mainFont">
                     After spending the past 23 years trying to answer this question, once posed by a very wise and very
                     strange caterpillar, I now feel it is time for me to explain who I am, why I created this website to
@@ -142,17 +162,16 @@
             <div class="col-lg-1"></div>
         </div>
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10 mainBackground mainText">
-                <p class="textCentered mainFont">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-9 mainBackground mainText">
+                <p class="textCentered mainFont" id="Skills">
                     So how do all of my super epic skills line up in a more concise and less meandering way?
                 </p>
             </div>
             <div class="col-lg-1"></div>
         </div>
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-1 mainBackground"></div>
+            <div class="col-lg-2"></div>
             <div class="col-lg-8 mainBackground mainText table-responsive-sm">
                 <table class="table table-bordered table-sm myTableBorder mainFont">
                     <thead>
@@ -224,29 +243,33 @@
             <div class="col-lg-1"></div>
         </div>
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-1 mainBackground"></div>
-            <div class="col-lg-9 mainBackground">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-9 mainBackground" id="FavProj">
                 <p class="headings2 mainFont">Now, onto the best part of the website...</p>
             </div>
             <div class="col-lg-1"></div>
         </div>
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10 mainBackground">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-9 mainBackground">
                 <p class="headings1 mainFont">My Favorite Projects</p>
             </div>
             <div class="col-lg-1"></div>
         </div>
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10 mainBackground mainText table-responsive-sm">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-9 mainBackground mainText table-responsive-sm">
                 <table class="table table-bordered table-sm myTableBorder mainFont">
                     <thead>
                         <tr>
                             <td class="evenSplitTable">
                                 <h1 class="headings3">How To Take Over the World</h1>
-                                <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image">
+                                <div class="video-wrapper">
+                                    <iframe class="video" src="https://www.youtube.com/embed/2YUqOnVBiaA"
+                                        title="Conquering The World"
+                                        allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
                                 <p class="favProjectsPadding">A narrative website based on reasearch about individuals
                                     who attempted to conquor the
                                     world.</p>
@@ -256,7 +279,11 @@
                             </td>
                             <td class="evenSplitTable">
                                 <h1 class="headings3">One Little Octopus in a Flying Spaceship</h1>
-                                <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image">
+                                <div class="video-wrapper">
+                                    <img src="assets/OLOFS/ShipXLPng.png"
+                                        alt="Pixel art of an bioluminescent octopus in a flying saucer"
+                                        class="imageTwo">
+                                </div>
                                 <p class="favProjectsPadding">A 2-D platformer game. While still in the initial stages
                                     of development, is designed
                                     to be playable on a universal arcade machine.</p>
@@ -266,10 +293,15 @@
                             </td>
                             <td class="evenSplitTable">
                                 <h1 class="headings3">Baguazhang's Rare Herbs & Teas</h1>
-                                <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image">
-                                <p class="favProjectsPadding">Loreom ipsum odor amet consecetcure les durvet forthengh
-                                    adipsichig elit. Parensant
-                                    phallseum ac aenean maethgna honorbus levithine.</p>
+                                <div class="video-wrapper">
+                                    <iframe class="video" src="https://www.youtube.com/embed/tIgmROannLs"
+                                        title="Baguazhang&#39;s Rare Herbs &amp; Teas" frameborder="0"
+                                        allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <!-- <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image"> -->
+                                <p class="favProjectsPadding">A VR potion-making game built in Unity for Meta Quest 3,
+                                    focused on immersive interaction and physics.</p>
                                 <p class="favProjectsPadding">-VR/XR Development</p>
                                 <p class="alignRight">More <i class="fa-solid fa-circle-up fa-rotate-90 fa-2xl"
                                         style="color: #140d0d;"></i></p>
@@ -278,27 +310,40 @@
                         <tr>
                             <td class="evenSplitTable">
                                 <h1 class="headings3">Who Dunnit: Murder Mystery</h1>
-                                <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image">
-                                <p class="favProjectsPadding">Loreom ipsum odor amet consecetcure les durvet forthengh
-                                    adipsichig elit. Parensant
-                                    phallseum ac aenean maethgna honorbus levithine.</p>
+                                <div class="video-wrapper">
+                                    <iframe class="video" src="https://www.youtube.com/embed/vTxkIMQlcbU"
+                                        title="WhoDunnit: A Murder Mystery" frameborder="0"
+                                        allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <p class="favProjectsPadding">A 360 interactive murder mystery using unreliable
+                                    flashbacks, built in Unity for Meta Quest.</p>
                                 <p class="favProjectsPadding">-Visual Story Telling</p>
                                 <p class="alignRight">More <i class="fa-solid fa-circle-up fa-rotate-90 fa-2xl"
                                         style="color: #140d0d;"></i></p>
                             </td>
                             <td class="evenSplitTable">
                                 <h1 class="headings3">Volt of the Pharaoh</h1>
-                                <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image">
-                                <p class="favProjectsPadding">Loreom ipsum odor amet consecetcure les durvet forthengh
-                                    adipsichig elit. Parensant
-                                    phallseum ac aenean maethgna honorbus levithine.</p>
+                                <div class="video-wrapper">
+                                    <iframe class="video" src="https://www.youtube.com/embed/JwlIvso2Krk"
+                                        title="VoltofPharoah (Prototype Playthrough)" frameborder="0"
+                                        allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <p class="favProjectsPadding">A Unity VR game teaching breadboard circuitry to
+                                    non-English-speaking students, with ongoing research plans.</p>
                                 <p class="favProjectsPadding">-UI/UX Development</p>
                                 <p class="alignRight">More <i class="fa-solid fa-circle-up fa-rotate-90 fa-2xl"
                                         style="color: #140d0d;"></i></p>
                             </td>
                             <td class="evenSplitTable">
                                 <h1 class="headings3">Tavern Town: A Short Stories Series</h1>
-                                <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image">
+                                <div class="video-wrapper">
+                                    <img src="assets/TavernTownMaps/LandsOfZerahemlian.jpg"
+                                        alt="A hand drawn map of the word in which the short stories take place"
+                                        class="imageTwo">
+                                </div>
+                                <!-- <img src="assets/CommingSoon.jpg" alt="no image. Image comming soon." class="image"> -->
                                 <p class="favProjectsPadding">Loreom ipsum odor amet consecetcure les durvet forthengh
                                     adipsichig elit. Parensant
                                     phallseum ac aenean maethgna honorbus levithine.</p>
@@ -328,7 +373,7 @@
         </footer>
     </div>
 
-   
+
 </body>
 
 </html>
